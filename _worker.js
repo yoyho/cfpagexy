@@ -6,7 +6,7 @@
         // 检查路径是否以 '/' 开头，并且是否设置了主机名的环境变量
         if (url.pathname.startsWith('/')) {
             // 使用环境变量设置主机名
-            url.hostname = env.CUSTOM_HOSTNAME || "cookbox-limkco.ladeapp.com";
+            url.hostname = env.HOSTNAME || "cookbox-limkco.ladeapp.com";
 
             // 使用更新后的 URL 创建新的请求
             let new_request = new Request(url, request);
